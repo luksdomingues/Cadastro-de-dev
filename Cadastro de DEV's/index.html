@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Cadastro de DEV's</title>
+</head>
+
+<body>
+
+    <div>
+        <h1 id="titulo">
+            Cadastro de DEV's
+        </h1>
+        <p id="subtitulo">
+            Complete suas informações!
+        </p>
+        <br>
+    </div>
+
+    <form action="">
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome"><strong>Nome</strong></label>
+                <input type="text" name="nome" id="nome" required>
+                <!--REQUIRED SERVE PARA SER OBRIGATÓRIO PREENCHER O CAMPO PARA ESCRITA. IMPORTANTE PARA GUARDAR DADOS-->
+            </div>
+
+            <div class="campo">
+                <label for="sobrenome"><strong>Sobrenome</strong></label>
+                <input type="text" name="sobrenome" id="sobrenome" required>
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <label for="email"><strong>E-mail</strong></label>
+            <input type="email" name="email" id="email" required>
+        </div>
+
+        <div class="campo">
+            <label><strong>De qual lado da aplicação você desenvolve?</strong></label>
+            <label>
+                <input type="radio" name="devweb" id="frontend" checked>Front-End 
+                <!--CHECKED SERVE PARA DEIXAR A OPÇÃO MARCADA ANTES DA PESSOA APERTAR NA OPÇÃO... SERVE APENAS PARA RADIO-->
+            </label>
+            <label>
+                <input type="radio" name="devweb" id="backend">Back-End
+            </label>
+            <label>
+                <input type="radio" name="devweb" id="fullstack">Fullstack
+            </label>
+        </div>
+
+        <div>
+            <label for="senioridade"><strong>Senioridade</strong></label>
+            <select id="senioridade">
+                <option selected disabled value="">Selecione...</option>
+                <option>Junior</option>
+                <!--OPTION É BASTANTE USADO PRA ESCOLHER A OPÇÃO MAS DENTRO DE UMA CAIXINHA QUE VOCÊ APERTA E DESCE AS OPÇÕES-->
+                <option>Pleno</option>
+                <option>Senior</option>
+            </select>
+        </div>
+
+        <fieldset>
+            <div id="check">
+                <label><strong>Selecione as tecnologias que utiliza: </strong></label><br><br>
+                <input type="checkbox" name="tecnologia1" id="tecnologia1" value="HTML">
+                <label for="tecnologia1">HTML</label>
+
+                <input type="checkbox" name="tecnologia2" id="tecnologia2" value="CSS">
+                <label for="tecnologia2">CSS</label>
+
+                <input type="checkbox" name="tecnologia3" id="tecnologia3" value="JavaScript">
+                <label for="tecnologia3">JavaScript</label>
+
+                <input type="checkbox" name="tecnologia4" id="tecnologia4" value="PHP">
+                <label for="tecnologia4">PHP</label>
+
+                <input type="checkbox" name="tecnologia5" id="tecnologia5" value="C#">
+                <label for="tecnologia5">C#</label>
+
+                <input type="checkbox" name="tecnologia6" id="tecnologia6" value="Python">
+                <label for="tecnologia6">Python</label>
+
+                <input type="checkbox" name="tecnologia7" id="tecnologia7" value="Java">
+                <label for="tecnologia7">Java</label>
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <br>
+            <label>Conte um pouco sobre a sua experiência: </label>
+            <textarea rows="6" style="width: 26em;" id="experiencia" name="experiencia"></textarea>
+
+            <button class="botao" type="Submit">Concluído</button>
+        </div>
+    </form>
+
+
+</body>
+
+</html>
